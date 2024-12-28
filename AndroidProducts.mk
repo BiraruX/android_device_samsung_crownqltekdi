@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_crownqltekdi.mk
+    $(LOCAL_DIR)/twrp_crownqltekdi.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_crownqltekdi-user \
-    omni_crownqltekdi-userdebug \
-    omni_crownqltekdi-eng
+    twrp_crownqltekdi-user \
+    twrp_crownqltekdi-userdebug \
+    twrp_crownqltekdi-eng
