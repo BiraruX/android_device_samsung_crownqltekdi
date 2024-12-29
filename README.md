@@ -1,4 +1,4 @@
-# Android device tree for KDDI SCV40 (crownqltekdi)
+# Android device tree for Samsung Galaxy Note 9 (crownqltekdi)(scv40)
 
 ```
 #
