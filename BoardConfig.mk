@@ -78,8 +78,13 @@ TARGET_ODM_PROP += $(PROP_FOLDER)/odm.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
+TARGET_OTA_ASSERT_DEVICE := crownqltekdi
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
@@ -99,4 +104,15 @@ TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_INPUT_BLACKLIST := "sec_e-pen-pad"c
 TW_USE_TOOLBOX := true
+TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
+TW_MAX_BRIGHTNESS := 50000
+TW_DEFAULT_BRIGHTNESS := 20000
+TW_NO_REBOOT_BOOTLOADER := true
+TW_HAS_DOWNLOAD_MODE := true
+TW_INCLUDE_NTFS_3G := true
+TW_EXCLUDE_SUPERSU := true
+TW_USE_NEW_MINADBD := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_MTP_DEVICE := /dev/mtp_usb
