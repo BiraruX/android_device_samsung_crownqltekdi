@@ -1,0 +1,122 @@
+# ============================================
+# Device Nodes for Qualcomm Audio and Media
+# ============================================
+
+# Audio-related devices
+create /dev/msm_aac                0660  system   audio  # AAC audio codec
+create /dev/msm_aac_in             0660  system   audio  # AAC input codec
+create /dev/msm_alac               0660  system   audio  # ALAC codec
+create /dev/msm_amrnb              0660  system   audio  # AMR NB codec
+create /dev/msm_amrnb_in           0660  system   audio  # AMR NB input codec
+create /dev/msm_amrwb              0660  system   audio  # AMR WB codec
+create /dev/msm_amrwb_in           0660  system   audio  # AMR WB input codec
+create /dev/msm_amrwbplus          0660  system   audio  # AMR WB+ codec
+create /dev/msm_ape                0660  system   audio  # APE codec
+create /dev/msm_audio_cal          0660  system   audio  # Audio calibration
+create /dev/msm_evrc               0660  system   audio  # EVRC codec
+create /dev/msm_evrc_in            0660  system   audio  # EVRC input codec
+create /dev/msm_g711alaw           0600  root     root   # G.711 codec (alaw)
+create /dev/msm_g711alaw_in        0600  root     root   # G.711 alaw input
+create /dev/msm_g711mlaw           0600  root     root   # G.711 codec (mlaw)
+create /dev/msm_g711mlaw_in        0600  root     root   # G.711 mlaw input
+create /dev/msm_hweffects          0660  system   audio  # Hardware audio effects
+create /dev/msm_mp3                0660  system   audio  # MP3 codec
+
+# ============================================
+# Device Nodes for System Memory and Resources
+# ============================================
+
+# Memory management
+create /dev/ashmem                  0666  root     root   # Android shared memory
+create /dev/ion                     0660  system   system # Ion memory allocator
+create /dev/memory_bandwidth        0600  root     root   # Memory bandwidth monitoring
+create /dev/cpu_dma_latency         0600  root     root   # CPU latency configuration
+create /dev/device-mapper           0600  root     root   # Device mapper (LVM)
+
+# ============================================
+# Device Nodes for Communication Interfaces
+# ============================================
+
+# Diagnostic and communication interfaces
+create /dev/diag                    0660  system   oem_2901  # Diagnostic interface
+create /dev/dpl_ctrl                0660  usb      usb       # USB control interface
+create /dev/dsm_ctrl_dev            0600  root     root      # DSM control device
+create /dev/dun                     0600  root     root      # Dial-up networking
+create /dev/ecryptfs                0600  root     root      # eCryptfs filesystem
+create /dev/esfp0                   0600  root     root      # ESFP device (security)
+create /dev/fuse                    0600  root     root      # FUSE filesystem
+create /dev/gpiochip*               0600  root     root      # GPIO chip devices (multiple)
+create /dev/hwmisc                  0600  root     root      # Hardware misc devices
+
+# ============================================
+# Device Nodes for Secure Hardware & RNG
+# ============================================
+
+# Secure and random number generator devices
+create /dev/hw_random               0600  root     root      # Hardware random number generator
+create /dev/hwbinder                0666  root     root      # Hardware binder interface
+create /dev/mobicore                0600  root     root      # Mobile core security service
+create /dev/msm-rng                 0600  root     root      # Qualcomm RNG device
+
+# ============================================
+# Device Nodes for Block Devices and Storage
+# ============================================
+
+# Block devices
+create /dev/block                   0755  root     root      # Block device directory
+create /dev/loop-control            0600  root     root      # Loopback control device
+
+# ============================================
+# Device Nodes for Media & Input Devices
+# ============================================
+
+# Media and camera-related devices
+create /dev/media*                  0660  system   camera    # Media device nodes (e.g., camera)
+create /dev/ipa                      0660  radio    radio     # IPA device (internet protocol acceleration)
+
+# ============================================
+# Device Nodes for USB and I2C Interfaces
+# ============================================
+
+# USB and I2C devices
+create /dev/i2c-*                   0600  root     root      # I2C interfaces
+create /dev/usb                      0600  root     root      # USB devices
+create /dev/usb_misc                 0600  root     root      # Miscellaneous USB devices
+
+# ============================================
+# General Devices
+# ============================================
+
+# General-purpose device nodes
+create /dev/adsprpc-smd             0660  system   system    # Advertising service RPC
+create /dev/adsprpc-smd-secure      0600  root     root      # Secure advertising service RPC
+create /dev/apr_apps2               0600  root     root      # APR application
+create /dev/at_mdm0                 0640  radio    radio     # AT modem device
+create /dev/at_usb0                 0640  radio    radio     # AT USB device
+create /dev/at_usb1                 0600  root     root      # AT USB device 1
+create /dev/avtimer                 0660  system   audio     # Audio video timer
+create /dev/binder                  0666  root     root      # Binder IPC
+create /dev/ccic_misc               0600  root     root      # USB type-c miscellaneous
+create /dev/ccid_bulk               0600  root     root      # USB CCID bulk data
+create /dev/ccid_ctrl               0600  root     root      # USB CCID control interface
+create /dev/console                 0600  root     root      # Console interface
+
+# ============================================
+# Debugging & Logging Devices
+# ============================================
+
+# Logging and message devices
+create /dev/kmsg                    0600  root     root      # Kernel messages
+create /dev/kmsg_debug              0222  root     root      # Debugging kernel messages
+create /dev/loop-control            0600  root     root      # Loopback control device
+
+# ============================================
+# Miscellaneous Devices
+# ============================================
+
+# Miscellaneous devices for various hardware components
+create /dev/glink_pkt_loopback      0600  root     root      # Qualcomm Glink packet loopback
+create /dev/glink_pkt_loopback_ctrl 0600  root     root      # Control for Glink loopback
+create /dev/hqm_event               0600  root     root      # HQM event device
+create /dev/max_hrm                 0600  root     root      # Maximum HRM device (e.g., heart rate monitor)
+create /dev/esfp0                   0600  root     root      # Secure fuses (if relevant)
