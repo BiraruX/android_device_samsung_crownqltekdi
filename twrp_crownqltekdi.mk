@@ -20,7 +20,7 @@ PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := Galaxy Note 9
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
+PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="crownqltekdi-user 10 QP1A.190711.020 SCV40KDS1CVK1 release-keys"
